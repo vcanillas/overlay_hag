@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="score-box" id="box-left">0</div>
+        <div class="score-box" id="box-right">0</div>
+    </div>
+    <div class="buttons">
+        <button onclick="increment('left')">+1 à gauche</button>
+        <button onclick="increment('right')">+1 à droite</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="invert()">Inverse score</button>
+
+        <!-- Sélecteur de fond d'écran -->
+        <div class="background-selector">
+            <label for="backgrounds">Choisissez un fond d'écran :</label>
+            <select id="backgrounds">
+                <option value="./HAG_new_SCORE_TOP_BAR_v2.png">Classique 1</option>
+                <!-- <option value="background2.jpg">Fond 2</option>
+                <option value="background3.jpg">Fond 3</option> -->
+            </select>
+            <button onclick="changeBackground()">Confirmer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    background-image: url('HAG_new_SCORE_TOP_BAR_v2.png'); /* Fond par défaut */
+    background-size: cover; /* Ajuste la taille pour couvrir toute la page */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-position: top center; /* Centre l'image en haut */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.score-box {
+    position: absolute;
+    width: 8vw; /* Ajuste la taille en fonction de la largeur de l'écran */
+    height: 8vw;
+    max-width: 20px;
+    max-height: 20px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw; /* Ajuste la taille du texte */
+    /* border-radius: 50%;  */
+}
+
+.buttons {
+    position: absolute;
+    bottom: 0px;
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.background-selector {
+    margin-top: 30px;
+}
+
+/* Positionnement spécifique basé sur l'image */
+#box-left {
+    left: 44.58%;
+    top: 179px;
+    transform: translate(-50%, -50%);
+}
+
+#box-right {
+    right: 44.58%;
+    top: 179px;
+    transform: translate(50%, -50%);
+}
