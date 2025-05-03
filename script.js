@@ -1,18 +1,13 @@
 let leftScore = 0;
 let rightScore = 0;
 
-function increment(side) {
-    if (side === 'left') {
-        leftScore++;
-    } else {
-        rightScore++;
-    }
+function increment(add, side) {
+    side === 'left' ? leftScore += (add === '+' ? 1 : -1) : rightScore += (add === '+' ? 1 : -1);
     updateScores();
 }
 
 function reset() {
-    leftScore = 0;
-    rightScore = 0;
+    rightScore = leftScore = 0;
     updateScores();
 }
 

@@ -14,20 +14,23 @@
         <div class="score-box" id="box-right">0</div>
     </div>
     <div class="buttons">
-        <button onclick="increment('left')">+1 à gauche</button>
-        <button onclick="increment('right')">+1 à droite</button>
+        <button onclick="increment('+','left')">+1 à gauche</button>
+        <button onclick="increment('+','right')">+1 à droite</button>
         <button onclick="reset()">Reset</button>
         <button onclick="invert()">Inverse score</button>
+        <button onclick="increment('-','left')">-1 à gauche</button>
+        <button onclick="increment('-','right')">-1 à droite</button>
 
-        <!-- Sélecteur de fond d'écran -->
         <div class="background-selector">
-            <label for="backgrounds">Choisissez un fond d'écran :</label>
+            <label for="backgrounds">Background :</label>
             <select id="backgrounds">
-                <option value="./HAG_new_SCORE_TOP_BAR_v2.png">Classique 1</option>
-                <!-- <option value="background2.jpg">Fond 2</option>
-                <option value="background3.jpg">Fond 3</option> -->
+                <option value="backgrounds/HAG_Classique.png">Classique 1</option>
+                <option value="backgrounds/HAG_WorldBattle.webp">HAG_WorldBattle</option>
+                <!-- <option value="background3.jpg">Fond 3</option> -->
             </select>
             <button onclick="changeBackground()">Confirmer</button>
+            <br />
+            Optimized for 1920px width - Optimisé pour 1920px de largeur
         </div>
     </div>
 
