@@ -5,6 +5,7 @@ body {
     background-position: top left; /* Positions image in top-left corner */
     font-family: Arial, sans-serif;
     text-align: center;
+    overflow: hidden;
 }
 
 .score-box {
