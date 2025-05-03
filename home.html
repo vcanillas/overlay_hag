@@ -14,15 +14,16 @@
         <div class="score-box" id="box-right">0</div>
     </div>
     <div class="buttons">
-        <button onclick="increment('+','left')">+1 à gauche</button>
-        <button onclick="increment('+','right')">+1 à droite</button>
+        <button onclick="increment(1,'left')">+1 à gauche</button>
+        <button onclick="increment(1,'right')">+1 à droite</button>
         <button onclick="reset()">Reset</button>
         <button onclick="invert()">Inverse score</button>
-        <button onclick="increment('-','left')">-1 à gauche</button>
-        <button onclick="increment('-','right')">-1 à droite</button>
+        <button onclick="increment(-1,'left')">-1 à gauche</button>
+        <button onclick="increment(-1,'right')">-1 à droite</button>
 
         <div class="background-selector">
-            <label for="backgrounds">Background :</label>
+            <button onclick="moveSelection(-1)">⬆️</button>
+            <button onclick="moveSelection(1)">⬇️</button>
             <select id="backgrounds">
                 <option value="backgrounds/HAG_Classique.png">Classique 1</option>
                 <option value="backgrounds/HAG_WorldBattle.webp">HAG_WorldBattle</option>
