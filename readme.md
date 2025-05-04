@@ -1,4 +1,4 @@
-# Tutos
+# Tutorial for OBS
 
 ## Français
 
