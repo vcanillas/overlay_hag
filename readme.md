@@ -23,7 +23,7 @@
 
 - Utiliser le bouton **Interagir** situé au-dessus de vos sources.
 - Cela ouvrira une pop-up avec le site web.
-- Pour changer l'overlay, utiliser les flèches puis cliquer sir Confirmer
+- Pour changer l'overlay, utiliser les flèches puis cliquer sur Confirmer
 
 ## English
 
