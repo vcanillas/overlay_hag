@@ -27,7 +27,7 @@
 
 ## English
 
-### Add a Source
+### Add a Source 
 
 1. Add a Source -> **Browser**.
 2. Name the source and confirm (**OK**).
@@ -53,3 +53,4 @@
 
 - Use the **arrow keys** to select the desired overlay.
 - Confirm your selection.
+
