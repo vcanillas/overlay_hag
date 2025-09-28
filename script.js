@@ -22,7 +22,14 @@ function updateScores() {
 }
 
 function changeBackground() {
-    let selectedBackground = document.getElementById('backgrounds').value;
+    var select = document.getElementById('backgrounds');
+    var selectedOption = select.options[select.selectedIndex];
+
+    var forecolor = selectedOption.getAttribute('data-forecolor');
+    var boxes = document.getElementsByClassName('score-box');
+    for (var i = 0; i < boxes.length; i++) { boxes[i].style.color = forecolor; }
+
+    var selectedBackground = selectedOption.value;
     document.body.style.backgroundImage = `url('${selectedBackground}')`;
 }
 
