@@ -22,15 +22,18 @@ function updateScores() {
 }
 
 function changeBackground() {
-    var select = document.getElementById('backgrounds');
-    var selectedOption = select.options[select.selectedIndex];
+    const select = document.getElementById('backgrounds');
+    const selectedOption = select.options[select.selectedIndex];
 
-    var forecolor = selectedOption.getAttribute('data-forecolor');
-    var boxes = document.getElementsByClassName('score-box');
-    for (var i = 0; i < boxes.length; i++) { boxes[i].style.color = forecolor; }
+    const forecolor = selectedOption.getAttribute('data-forecolor');
+    const boxes = document.getElementsByClassName('container');
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.color = forecolor;
+    }
 
-    var selectedBackground = selectedOption.value;
-    document.body.style.backgroundImage = `url('${selectedBackground}')`;
+    const selectedBackground = selectedOption.value;
+    const overlay = document.getElementById('overlay');
+    overlay.style.backgroundImage = `url('${selectedBackground}')`;
 }
 
 function moveSelection(direction) {

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Manager</title>
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/style-egc.css">
+</head>
+
+<body>
+    <div id="overlay" style="background-image: url('backgrounds/egc.png');">
+        <div class="container">
+            <div class="score-box" id="box-left">0</div>
+            <div class="score-box" id="box-right">0</div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="increment(1,'left')">+1 à gauche</button>
+        <button onclick="increment(1,'right')">+1 à droite</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="invert()">Inverse score</button>
+        <button onclick="increment(-1,'left')">-1 à gauche</button>
+        <button onclick="increment(-1,'right')">-1 à droite</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

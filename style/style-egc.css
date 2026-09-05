@@ -1,0 +1,15 @@
+#box-left {
+    left: 859px;
+    top: 174px;
+    transform: translate(-50%, -50%);
+}
+
+#box-right {
+    left: 1037px;
+    top: 174px;
+    transform: translate(50%, -50%);
+}
+
+.container {
+    color: rgba(250, 240, 249, 0.9);
+}
